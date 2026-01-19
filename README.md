@@ -26,12 +26,8 @@ Copia questo codice nella console Python di ETAP:
 ```python
 import sys
 import subprocess
-try:
-    print("Installazione di customtkinter...")
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'customtkinter'])
-    print("FATTO! CustomTkinter installato.")
-except Exception as e:
-    print(f"Errore durante l'installazione: {e}")
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'customtkinter'])
 ```
 
 ### 2. Installazione di PyAutoGUI
@@ -41,29 +37,14 @@ Copia questo codice nella console Python di ETAP:
 ```python
 import sys
 import subprocess
-try:
-    print("Installazione di pyautogui...")
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyautogui'])
-    print("FATTO! PyAutoGUI installato.")
-except Exception as e:
-    print(f"Errore durante l'installazione: {e}")
+  
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'pyautogui'])
+
 ```
-
-### 3. (Opzionale) Verifica Installazione
-
-Per verificare che tutto sia installato correttamente, prova a importare i moduli:
-
-```python
-import customtkinter
-import pyautogui
-print("Tutti i pacchetti sono stati caricati correttamente!")
-```
-
-Se non ricevi errori, sei pronto per eseguire il programma.
 
 ## Come Eseguire il Programma
 
-1.  Assicurati che il file `main_final.py` (o il nome del tuo script principale) sia nella cartella corretta.
+1.  Assicurati che il file `.py` (o il nome del tuo script principale) sia nella cartella corretta.
 2.  Nella Console Python di ETAP, esegui il file usando il comando:
 
 ```python
